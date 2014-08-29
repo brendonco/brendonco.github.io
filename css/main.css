@@ -1,0 +1,43 @@
+/**
+ * Please edit as needed
+ */
+
+body { font-size: 2em; }
+
+header, footer {
+	background: #000;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+}
+
+.grid {
+	overflow: hidden;
+	padding: 15px;
+}
+.grid-item {
+	float: left;
+	padding: 0 0 50%;
+	position: relative;
+	width: 50%;
+}
+.grid-item .inner {
+	bottom: 15px;
+	box-shadow: 0 0 10px #999;
+	left: 15px;
+	padding: 15px;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
+.grid-item-1 .inner { background-color: rgba( 0, 0, 0, .1 ); }
+.grid-item-2 .inner { background-color: rgba( 255, 0, 0, .1 ); }
+.grid-item-3 .inner { background-color: rgba( 0, 255, 0, .1 ); }
+.grid-item-4 .inner { background-color: rgba( 0, 0, 255, .1 ); }
+.grid-item-5 .inner { background-color: rgba( 255, 0, 255, .1 ); }
+.grid-item-6 .inner { background-color: rgba( 255, 255, 0, .1 ); }
+
+
+
+
