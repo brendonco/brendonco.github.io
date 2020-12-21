@@ -7,7 +7,7 @@ const Contact = ({profile}) => (
         <ContactWrapper>
             {
                 profile.contact.map(contact => (
-                    <ContactItem>
+                    <ContactItem key={contact.id}>
                         <Image src={contact.icon} width="16" height="16" alt="email"/>
                         <span>{contact.value}</span>
                     </ContactItem>

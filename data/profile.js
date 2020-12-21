@@ -5,12 +5,15 @@ const profile = {
     lastname: 'Co',
     title: 'Senior Software Engineer (Lead)',
     contact: [{
+        id: 'email',
         icon: '/email.svg',
         value: 'co.brendon@yahoo.com'
     },{
+        id: 'github',
         icon: '/github-logo.png',
         value: 'https://github.com/brendonco'
     }, {
+        id: 'twitter',
         icon: '/twitter-logo.svg',
         value: 'https://twitter.com/brendonco2000',
     }],
@@ -20,8 +23,15 @@ const profile = {
         url: 'https://medium.com/@marvels0098/how-to-include-reactjs-app-in-docker-container-2e73068ce2d5'
     }],
     books: [{
+        id: 'jtmfe',
         title: 'Journey to Micro Frontends',
-        url: 'https://leanpub.com/journeytomfe'
+        url: 'https://leanpub.com/journeytomfe',
+        img: 'https://d2sofvawe08yqg.cloudfront.net/journeytomfe/hero2x?1591187579'
+    }, {
+        id: 'hwrt-f-js',
+        title: 'How to Write Real-time Features in JavaScript',
+        url: 'https://www.amazon.com/BEANS-Bootstrap-ExpressJS-Socket-IO-How-JavaScript/dp/1502541149',
+        img: 'https://images-na.ssl-images-amazon.com/images/I/51Wou0YKNfL._SX331_BO1,204,203,200_.jpg',
     }]
 };
 
