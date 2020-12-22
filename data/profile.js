@@ -32,7 +32,32 @@ const profile = {
         title: 'How to Write Real-time Features in JavaScript',
         url: 'https://www.amazon.com/BEANS-Bootstrap-ExpressJS-Socket-IO-How-JavaScript/dp/1502541149',
         img: 'https://images-na.ssl-images-amazon.com/images/I/51Wou0YKNfL._SX331_BO1,204,203,200_.jpg',
-    }]
+    }],
+    travels: {
+        title: 'INTERNATIONAL EXPERIENCE',
+        markers: [{
+            markerOffset: 15,
+            name: 'Augsburg, Germany',
+            coordinates: [10.900750303960981, 48.455250360134734]
+        },{
+            markerOffset: -30,
+            name: 'Taipei, Taiwan',
+            coordinates: [121.61258149123522, 25.27770072684692]
+        },
+        {
+            markerOffset: 15,
+            name: 'Cebu, Philippines',
+            coordinates: [123.86144261394908, 10.81136792821119]
+        }, {
+            markerOffset: 15,
+            name: 'Shenzhen, China',
+            coordinates: [114.0807537609972, 23.056469088377284],
+        }, {
+            markerOffset: 15,
+            name: 'Singapore',
+            coordinates: [103.74551407051558, 1.9287016314791159]
+        }]
+    }
 };
 
 export default profile;
