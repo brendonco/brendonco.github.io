@@ -12,9 +12,9 @@ const profile = {
             country: 'SINGAPORE',
             description: `Hands on Web application development. Implement proof of concept on different technology into
             existing product.Setup development code base via Webpack, React, ES6, LODASH, CSS in JS, Zuul and
-            library dependency.Design and architect Micro Frontend.Build UI library from scratch.Apply Test
-            Driven Development using test framework such as Jasmine, testing library and Jest.Critique application
-            wireframes and designs.Accessing, determine the work effort and estimate the necessary time to
+            library dependency. Design and architect Micro Frontend. Build UI library from scratch.Apply Test
+            Driven Development using test framework such as Jasmine, testing library and Jest. Critique application
+            wireframes and designs. Accessing, determine the work effort and estimate the necessary time to
             completion.`
         },
         {
