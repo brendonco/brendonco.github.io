@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const BooksWrapper = styled.div`
     display: grid;
-    grid-template-columns: 25% 50%;
+    grid-template-columns: 15% 15%;
     max-width: inherit;
 `;
 
