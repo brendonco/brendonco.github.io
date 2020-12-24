@@ -11,7 +11,8 @@ export const ContactItem = styled.div`
     align-items: center;
     white-space: nowrap;
 
-    span {
+    a {
+        font-size: 12px; 
         padding-left: 0.5em;
     }
 `;

@@ -3,7 +3,7 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components'
 const GlobalStyle = createGlobalStyle`
   body {
     font-family: Helvetica, sans-serif, verdana;
-    font-size: 16px;
+    font-size: 1em;
     margin: 0;
     padding: 0;
     box-sizing: border-box;

@@ -15,7 +15,3 @@ export const BooksItem = styled.div`
         padding-left: 0.5em;
     }
 `;
-
-export const NoBorderLink = styled.a`
-    
-`;

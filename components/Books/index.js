@@ -10,9 +10,9 @@ const Books = ({ profile }) => (
             profile.books.map(book => (
                 <BooksItem key={book.id}>
                     <Link href={book.url} passHref>
-                        <NoBorderLink target="_blank">
-                            <Image src={book.img} width="148" height="223" />
-                        </NoBorderLink>
+                        <a target="_blank">
+                            <Image src={book.img} width="74" height="115.5" />
+                        </a>
                     </Link>
                 </BooksItem>
                 )
