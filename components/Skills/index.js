@@ -1,12 +1,13 @@
 import Card from '../Card';
 import { SkillsWrapper } from './skills-styled';
+import ProgressBar from '../ProgressBar';
 
 const Skills = ({ profile }) => (
     <Card title="Skills">
         <SkillsWrapper>
             {
                 profile.skills.map((skill, idx) => (
-                <span key={`${skill}-idx`}>&bull; {skill}</span>
+                    <div key={`${skill}-idx`}>&bull; {skill.label} <ProgressBar completed={skill.rate} bgcolor={skill.color} /></div>
                 ))
             }
         </SkillsWrapper>

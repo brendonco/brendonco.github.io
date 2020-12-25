@@ -100,14 +100,14 @@ const profile = {
         }
     ],
     skills: [
-        'ReactJS, redux, react-router',
-        'Next.js',
-        'RxJS',
-        'JavaScript, HTML5, CSS3',
-        'SASS, Styled-Components',
-        'AG-GRID',
-        'Jest, testing-library, Jasmine',
-        'PhoneGap, react-native'
+        {label: 'ReactJS, redux, react-router', rate: 80, color: '#6a1b9a'},
+        {label: 'Next.js', rate: 80, color: '#ef6c00'},
+        {label: 'RxJS', rate: 70, color: '#00695c'},
+        {label: 'JavaScript, HTML5, CSS3', rate: 80, color: '#699'},
+        {label: 'SASS, Styled-Components', rate: 80, color: '#939196'},
+        {label: 'AG-GRID', rate: 75, color: '#484848'},
+        {label: 'Jest, testing-library, Jasmine', rate: 75, color: '#fc642d'},
+        {label: 'PhoneGap, react-native', rate: 70, color: '#ff5a5f'}
     ],
     articles: [
         {
