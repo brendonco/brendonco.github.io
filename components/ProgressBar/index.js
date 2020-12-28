@@ -1,11 +1,7 @@
-import { Container, Filler, Label } from './progress-bar-styled';
+import Canvas from './Canvas';
 
 const ProgressBar = ({ completed, bgcolor }) => (
-    <Container>
-        <Filler completed={completed} bgcolor={bgcolor}>
-            <Label>{`${completed}%`}</Label>
-        </Filler>
-    </Container>
+    <Canvas completed={completed} bgColor={bgcolor} innerWidth="250" innerHeight="250"/>
 );
 
 export default ProgressBar;

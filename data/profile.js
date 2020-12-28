@@ -1,14 +1,16 @@
+const currentPosition = 'Senior Software Engineer (Lead)';
+
 const profile = {
     firstname: 'Brendon',
     lastname: 'Co',
-    title: 'Senior Software Engineer (Lead)',
+    title: currentPosition,
     workExperience: [
         {
             id: 'scb',
             dateFrom: '2018-08',
             isCurrent: true,
             company: 'STANDARD CHARTERED BANK',
-            position: 'Senior Software Engineer (Lead)',
+            position: currentPosition,
             country: 'SINGAPORE',
             description: `Hands on Web application development. Implement proof of concept on different technology into
             existing product.Setup development code base via Webpack, React, ES6, LODASH, CSS in JS, Zuul and
@@ -99,22 +101,22 @@ const profile = {
             value: 'https://twitter.com/brendonco2000'
         }
     ],
-    skills: [
-        {label: 'ReactJS, redux, react-router', rate: 80, color: '#6a1b9a'},
-        {label: 'Next.js', rate: 80, color: '#ef6c00'},
-        {label: 'RxJS', rate: 70, color: '#00695c'},
-        {label: 'JavaScript, HTML5, CSS3', rate: 80, color: '#699'},
-        {label: 'SASS, Styled-Components', rate: 80, color: '#939196'},
-        {label: 'AG-GRID', rate: 75, color: '#484848'},
-        {label: 'Jest, testing-library, Jasmine', rate: 75, color: '#fc642d'},
-        {label: 'PhoneGap, react-native', rate: 70, color: '#ff5a5f'}
-    ],
     articles: [
         {
+            id: 'how-to-write',
             title: 'How to Include ReactJS App in Docker Container',
-            url:
-                'https://medium.com/@marvels0098/how-to-include-reactjs-app-in-docker-container-2e73068ce2d5'
+            value: 'https://medium.com/@marvels0098/how-to-include-reactjs-app-in-docker-container-2e73068ce2d5'
         }
+    ],
+    skills: [
+        {id: 'reactjs', label: 'ReactJS, redux, react-router', rate: 80, color: '#6a1b9a'},
+        {id: 'nextjs', label: 'Next.js', rate: 80, color: '#ef6c00'},
+        {id: 'rxjs', label: 'RxJS', rate: 70, color: '#00695c'},
+        {id: 'js', label: 'JavaScript, HTML5, CSS3', rate: 80, color: '#699'},
+        {id: 'style', label: 'SASS, Styled-Components', rate: 80, color: '#939196'},
+        {id: 'grid', label: 'AG-GRID', rate: 75, color: '#484848'},
+        {id: 'testing', label: 'Jest, testing-library, Jasmine', rate: 75, color: '#fc642d'},
+        {id: 'mobile', label: 'PhoneGap, react-native', rate: 70, color: '#ff5a5f'}
     ],
     books: [
         {

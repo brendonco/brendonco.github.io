@@ -6,6 +6,11 @@ export const SkillsWrapper = styled.div`
     grid-template-columns: 33.3% 33.3% 33.3%;
 
     > div {
-        padding-right: .5em;
+        padding-right: .5em;$
+    }
+
+    canvas {
+        width: 10em;
+        height: 10em;
     }
 `;

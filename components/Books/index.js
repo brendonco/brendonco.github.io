@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Card from '../Card';
-import { BooksWrapper, BooksItem, NoBorderLink } from './books-styled';
+import { BooksWrapper, BooksItem } from './books-styled';
 
 const Books = ({ profile }) => (
     <Card title="Books">
