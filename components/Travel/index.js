@@ -1,9 +1,9 @@
-import dynamic from 'next/dynamic';
 import PropTypes from 'prop-types';
 import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps';
 
 import places from './places';
 import { TravelWrapper, VectorContainer } from './travel-styled';
+import World from './World';
 
 const geoUrl =
     'https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json';
@@ -15,8 +15,6 @@ const isLabelVisible = ({ properties: { name } }) => {
 
     return visible;
 };
-
-const World = dynamic(() => import('./World'), { loading: () => 'Loading 3D globe . . .' });
 
 const Travel = ({
     profile: {
