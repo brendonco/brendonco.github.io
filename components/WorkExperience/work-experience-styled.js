@@ -19,7 +19,7 @@ export const Stepper = styled.ul`
         color: #ccc;
 
         ::after {
-            content: "";
+            content: '';
             position: absolute;
             z-index: 2;
             right: 0;
@@ -28,8 +28,8 @@ export const Stepper = styled.ul`
             border-radius: 50%;
             background: #fff;
             border: 1px #ccc solid;
-            width: .8em;
-            height: .8em;
+            width: 0.8em;
+            height: 0.8em;
         }
     }
 
@@ -38,7 +38,7 @@ export const Stepper = styled.ul`
         position: relative;
 
         ::before {
-            content: "";
+            content: '';
             position: absolute;
             z-index: 1;
             left: 0;
@@ -46,7 +46,8 @@ export const Stepper = styled.ul`
             border-left: 1px #ccc solid;
         }
 
-        strong, span {
+        strong,
+        span {
             display: block;
             font-size: 12px;
         }

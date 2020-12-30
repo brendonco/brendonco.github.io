@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 
+import Articles from '../Articles';
 import Books from '../Books';
 import Contact from '../Contact';
 import Header from '../Header';
 import Skills from '../Skills';
 import Travel from '../Travel';
 import WorkExperience from '../WorkExperience';
-import Articles from '../Articles';
 import { ResumeWrapper } from './resume-styled';
 
 const Resume = ({ profile }) => (
@@ -18,7 +18,7 @@ const Resume = ({ profile }) => (
         <Books profile={profile} />
         <Articles profile={profile} />
         <Travel profile={profile} />
-  </ResumeWrapper>
+    </ResumeWrapper>
 );
 
 Resume.propTypes = {

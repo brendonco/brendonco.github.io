@@ -6,7 +6,7 @@ export const Title = styled.h1`
     padding: 0;
     margin: 0;
     color: ${({ theme }) => theme.colors.primary};
-`
+`;
 
 export const HeaderWrapper = styled.div`
     margin-bottom: 1em;
@@ -18,7 +18,7 @@ export const Row = styled.div`
 
 export const Column = styled.div`
     flex: 50%;
-    direction: ${props => props.direction || 'unset'};
+    direction: ${(props) => props.direction || 'unset'};
 `;
 
 export const ImgCrop = styled.div`
