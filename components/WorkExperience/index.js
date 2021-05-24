@@ -11,7 +11,7 @@ const WorkExperience = ({ profile: { workExperience } }) => (
                 <li key={work.id}>
                     <time dateTime={work.date} />
                     <div>
-                        <img alt="logo" src={work.companyLogo} width="30px" />
+                        <img alt="logo" src={work.companyLogo} width="56px" height="56px" />
                         <strong>{transformWorkTitle(work)}</strong>
                         <span>{work.position}</span>
 
