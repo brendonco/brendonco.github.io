@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import PropTypes from 'prop-types';
 import { lazy } from 'react';
 import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps';
@@ -64,8 +65,8 @@ const Travel = ({
         <World
             width={800}
             height={400}
-            globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-            backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
+            globeImageUrl="/earth-night.jpg"
+            backgroundImageUrl="/night-sky.png"
             labelsData={places.features}
             labelLat={(d) => d.properties.latitude}
             labelLng={(d) => d.properties.longitude}
