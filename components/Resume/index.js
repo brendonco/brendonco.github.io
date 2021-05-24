@@ -1,23 +1,25 @@
+import dynamic from 'next/dynamic';
 import PropTypes from 'prop-types';
 
-import Articles from '../Articles';
-import Books from '../Books';
-import Contact from '../Contact';
-import Header from '../Header';
-import Skills from '../Skills';
-import Travel from '../Travel';
-import WorkExperience from '../WorkExperience';
+const DynamicArticlesComponent = dynamic(() => import('../Articles'));
+const DynamicBooksComponent = dynamic(() => import('../Books'));
+const DynamicContactComponent = dynamic(() => import('../Contact'));
+const DynamicHeaderComponent = dynamic(() => import('../Header'));
+const DynamicSkillsComponent = dynamic(() => import('../Skills'));
+const DynamicTravelComponent = dynamic(() => import('../Travel'));
+const DynamicWorkExperienceComponent = dynamic(() => import('../WorkExperience'));
+
 import { ResumeWrapper } from './resume-styled';
 
 const Resume = ({ profile }) => (
     <ResumeWrapper>
-        <Header profile={profile} />
-        <Contact profile={profile} />
-        <WorkExperience profile={profile} />
-        <Skills profile={profile} />
-        <Books profile={profile} />
-        <Articles profile={profile} />
-        <Travel profile={profile} />
+        <DynamicHeaderComponent profile={profile} />
+        <DynamicContactComponent profile={profile} />
+        <DynamicWorkExperienceComponent profile={profile} />
+        <DynamicSkillsComponent profile={profile} />
+        <DynamicBooksComponent profile={profile} />
+        <DynamicArticlesComponent profile={profile} />
+        <DynamicTravelComponent profile={profile} />
     </ResumeWrapper>
 );
 

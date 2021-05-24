@@ -53,3 +53,5 @@ export const Stepper = styled.ul`
         }
     }
 `;
+
+export const Wrapper = styled.div``;

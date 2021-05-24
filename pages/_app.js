@@ -29,7 +29,11 @@ export default function App({ Component, pageProps }) {
 }
 
 App.propTypes = {
-    Component: PropTypes.oneOfType([PropTypes.element, PropTypes.string, PropTypes.node])
-        .isRequired,
+    Component: PropTypes.oneOfType([
+        PropTypes.element,
+        PropTypes.func,
+        PropTypes.string,
+        PropTypes.node
+    ]).isRequired,
     pageProps: PropTypes.objectOf(PropTypes.any).isRequired
 };
