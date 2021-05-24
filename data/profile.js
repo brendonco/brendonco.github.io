@@ -111,6 +111,11 @@ const profile = {
             id: 'twitter',
             icon: '/twitter-logo.svg',
             value: 'https://twitter.com/brendonco2000'
+        },
+        {
+            id: 'linkedin',
+            icon: '/linkedin.svg',
+            value: 'https://www.linkedin.com/in/brendon-co-5195924/'
         }
     ],
     articles: [
