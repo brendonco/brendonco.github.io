@@ -12,7 +12,7 @@ export const Item = styled.div`
     white-space: nowrap;
 
     a {
-        font-size: 12px; 
+        font-size: 12px;
         padding-left: 0.5em;
     }
 `;

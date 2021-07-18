@@ -1,4 +1,6 @@
-const Switch = ({ id, toggled, onChange }) => {
+import PropTypes from 'prop-types';
+
+const Switch = ({ onChange }) => {
     return (
         <div className="toggleWrapper">
             <input type="checkbox" className="dn" id="dn" onChange={onChange} />
@@ -17,6 +19,10 @@ const Switch = ({ id, toggled, onChange }) => {
             </label>
         </div>
     );
+};
+
+Switch.propTypes = {
+    onChange: PropTypes.function.isRequired
 };
 
 export default Switch;
