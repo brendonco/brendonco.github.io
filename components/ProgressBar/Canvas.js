@@ -1,7 +1,14 @@
 import PropTypes from 'prop-types';
 import React, { useEffect, useRef } from 'react';
 
-const Canvas = ({ completed: percent, bgColor, innerWidth, innerHeight, ...restProps }) => {
+const Canvas = ({
+    completed: percent,
+    bgColor,
+    innerWidth,
+    innerHeight,
+    textColor,
+    ...restProps
+}) => {
     const canvasRef = useRef(null);
 
     useEffect(() => {
@@ -31,9 +38,9 @@ const Canvas = ({ completed: percent, bgColor, innerWidth, innerHeight, ...restP
         ctx.textBaseline = 'middle';
         ctx.textAlign = 'center';
         ctx.font = '3em Helvetica bold';
-        ctx.fillStyle = bgColor;
+        ctx.fillStyle = textColor;
         ctx.fillText(`${percent}%`, width / 2, height / 2);
-    }, [percent, bgColor, innerWidth, innerHeight]);
+    }, [percent, bgColor, innerWidth, innerHeight, textColor]);
 
     return <canvas ref={canvasRef} {...restProps} />;
 };
@@ -41,6 +48,7 @@ const Canvas = ({ completed: percent, bgColor, innerWidth, innerHeight, ...restP
 Canvas.propTypes = {
     completed: PropTypes.number.isRequired,
     bgColor: PropTypes.string.isRequired,
+    textColor: PropTypes.string.isRequired,
     innerWidth: PropTypes.string.isRequired,
     innerHeight: PropTypes.string.isRequired
 };

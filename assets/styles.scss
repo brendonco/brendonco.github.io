@@ -1,19 +1,14 @@
 .toggleWrapper {
     display: flex;
     position: fixed;
-    height: 5em;
+    height: 4em;
     align-items: center;
     justify-content: center;
     top: 0;
     background: #363537;
     width: 100%;
     z-index: 3;
-    // top: 8%;
-    // left: 25%;
-    // margin-top: 8px;
     overflow: hidden;
-    // padding: 0 200px;
-    // transform: translate3d(-50%, -50%, 0);
     
     input.dn[type='checkbox'] {
       position: absolute;
