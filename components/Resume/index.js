@@ -12,7 +12,7 @@ const DynamicWorkExperienceComponent = dynamic(() => import('../WorkExperience')
 import { ResumeWrapper } from './resume-styled';
 
 const Resume = ({ profile }) => (
-    <ResumeWrapper>
+    <ResumeWrapper className="content">
         <DynamicHeaderComponent profile={profile} />
         <DynamicContactComponent profile={profile} />
         <DynamicWorkExperienceComponent profile={profile} />

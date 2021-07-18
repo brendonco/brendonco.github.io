@@ -5,7 +5,7 @@ export const Title = styled.h1`
     font-size: 2em;
     padding: 0;
     margin: 0;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.text};
 `;
 
 export const HeaderWrapper = styled.div`

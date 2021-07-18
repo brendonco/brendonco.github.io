@@ -11,7 +11,14 @@ const WorkExperience = ({ profile: { workExperience } }) => (
                 <li key={work.id}>
                     <time dateTime={work.date} />
                     <div>
-                        <img alt="logo" src={work.companyLogo} width="56px" height="56px" />
+                        <img
+                            alt="logo"
+                            src={work.companyLogo}
+                            blurDataURL={work.companyLogo}
+                            width="56px"
+                            height="56px"
+                            placeholder="blur"
+                        />
                         <strong>{transformWorkTitle(work)}</strong>
                         <span>{work.position}</span>
 

@@ -12,7 +12,13 @@ const Books = ({ profile }) => (
                 <BooksItem key={book.id}>
                     <Link href={book.url} passHref>
                         <a target="_blank">
-                            <Image src={book.img} width="74" height="115.5" />
+                            <Image
+                                src={book.img}
+                                blurDataURL={book.img}
+                                width="74"
+                                height="115.5"
+                                placeholder="blur"
+                            />
                         </a>
                     </Link>
                 </BooksItem>

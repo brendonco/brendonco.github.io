@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import PropTypes from 'prop-types';
 
+import author from '../../public/me.jpg';
 import { Column, HeaderWrapper, ImgCrop, Row, Title } from './header-styled';
 
 const Header = ({ profile }) => (
@@ -14,7 +15,13 @@ const Header = ({ profile }) => (
             </Column>
             <Column direction="rtl">
                 <ImgCrop>
-                    <Image src="/me.jpg" width="100" height="auto" />
+                    <Image
+                        src={author}
+                        width="100"
+                        height="150"
+                        placeholder="blur"
+                        alt="Picture of the author"
+                    />
                 </ImgCrop>
             </Column>
         </Row>
