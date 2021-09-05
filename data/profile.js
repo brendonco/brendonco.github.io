@@ -54,7 +54,7 @@ const profile = {
             dateFrom: '2012-12',
             dateTo: '2014-06',
             company: "Moody's Analytics",
-            companyLogo: '/logos/m.jpeg',
+            companyLogo: '/logos/ma.jpeg',
             position: 'Senior Software Developer',
             country: 'SINGAPORE',
             description: `Fullstack software engineer. Create Restful API using JAVA. Create mobile hybrid application using
