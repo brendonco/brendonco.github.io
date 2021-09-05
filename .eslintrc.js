@@ -36,7 +36,8 @@ module.exports = {
                 specialLink: ['hrefLeft', 'hrefRight'],
                 aspects: ['invalidHref', 'preferButton']
             }
-        ]
+        ],
+        'react/display-name': 'off'
     },
     plugins: ['simple-import-sort']
 };
