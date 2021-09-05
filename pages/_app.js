@@ -43,8 +43,8 @@ export default function App({ Component, pageProps }) {
             <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
                 <GlobalStyle defaultTheme={theme} />
                 <Switch
-                    // id="switch-knob"
                     toggled={isToggled}
+                    theme={theme}
                     onChange={(e) => {
                         setIsToggled(e.target.checked);
                         themeToggler();

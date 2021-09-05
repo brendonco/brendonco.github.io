@@ -10,8 +10,7 @@ const profile = {
             dateFrom: '2018-08',
             isCurrent: true,
             company: 'STANDARD CHARTERED BANK',
-            companyLogo:
-                'https://media-exp1.licdn.com/dms/image/C4E0BAQFoPfk3ioQH9Q/company-logo_100_100/0/1621243713352?e=1629936000&v=beta&t=C4tcOX-JR_IK_I4rEKFeFOf90-9nlyTtSHFdJQbZCJA',
+            companyLogo: '/logos/scb.jpeg',
             position: currentPosition,
             country: 'SINGAPORE',
             description: `Hands on Web application development. Implement proof of concept on different technology into
@@ -26,8 +25,7 @@ const profile = {
             dateFrom: '2015-08',
             dateTo: '2018-07',
             company: 'CXA Group',
-            companyLogo:
-                'https://media-exp1.licdn.com/dms/image/C560BAQHRgH_AxtVw0w/company-logo_100_100/0/1519889997915?e=1629936000&v=beta&t=rSSDLgaJhrzAjkYVBOk7rlAbqx9yW_IQj5UtmnEydsA',
+            companyLogo: '/logos/cxa.png',
             position: 'Senior Web Developer (Lead)',
             country: 'SINGAPORE',
             description: `Hands on Web application development. Implement proof of concept on different technology into
@@ -41,8 +39,7 @@ const profile = {
             dateFrom: '2014-10',
             dateTo: '2015-07',
             company: 'Jones Lang LaSalle',
-            companyLogo:
-                'https://media-exp1.licdn.com/dms/image/C4D0BAQEmcAw4Qz9iLA/company-logo_100_100/0/1614656716530?e=1629936000&v=beta&t=qsJupPUtLTiNONh9OyU5GHhsaouF91ciVYuH0JuPjqg',
+            companyLogo: '/logos/jll.jpeg',
             position: 'Assistant Manager',
             country: 'SINGAPORE',
             description: `Fullstack software engineer. Create Restful API using C# and web application using AngularJS, Bootstrap,
@@ -57,8 +54,7 @@ const profile = {
             dateFrom: '2012-12',
             dateTo: '2014-06',
             company: "Moody's Analytics",
-            companyLogo:
-                'https://media-exp1.licdn.com/dms/image/C4E0BAQGdcL8iIvLIrA/company-logo_100_100/0/1593615303104?e=1629936000&v=beta&t=_6aLMQFYfMxBqHgqfFoQCh6_xDLg8jfBbKn4BEtjnV8',
+            companyLogo: '/logos/m.jpeg',
             position: 'Senior Software Developer',
             country: 'SINGAPORE',
             description: `Fullstack software engineer. Create Restful API using JAVA. Create mobile hybrid application using
@@ -71,8 +67,7 @@ const profile = {
             dateFrom: '2010-06',
             dateTo: '2012-11',
             company: 'NCS',
-            companyLogo:
-                'https://media-exp1.licdn.com/dms/image/C560BAQGH0BoTK8mSdg/company-logo_100_100/0/1596694558705?e=1629936000&v=beta&t=W6DuRwRFXjiLhT4jUwbO9k8zggBgYLHQHI6vqjtdgE8',
+            companyLogo: '/logos/ncs.jpeg',
             position: 'Senior Application Consultant (Lead)',
             country: 'SINGAPORE',
             description: `Fullstack software engineer. Create Restful API using C#.NET. Create SmartTV web application using
@@ -86,8 +81,7 @@ const profile = {
             dateFrom: '2009-03',
             dateTo: '2010-05',
             company: 'Comverse Inc.',
-            companyLogo:
-                'https://media-exp1.licdn.com/dms/image/C4E0BAQHsM9rNpYSvqA/company-logo_100_100/0/1618195749776?e=1629936000&v=beta&t=9GF16GaUg70eR5ajLQAYG_9m6J6ENQSdgqpjm9AtWX0',
+            companyLogo: '/logos/m.jpeg',
             position: 'Project Consultant',
             country: 'SINGAPORE',
             description: `Fullstack software engineer. Create Restful API using JAVA. Apply test driven development using JUnit.

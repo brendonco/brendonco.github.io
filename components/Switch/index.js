@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-const Switch = ({ onChange }) => {
+const Switch = ({ onChange, theme }) => {
     return (
-        <div className="toggleWrapper">
+        <div className={theme === 'light' ? 'toggleWrapper' : 'toggleWrapperNight'}>
             <input type="checkbox" className="dn" id="dn" onChange={onChange} />
             <label htmlFor="dn" className="toggle">
                 <span className="toggle__handler">
@@ -21,8 +21,14 @@ const Switch = ({ onChange }) => {
     );
 };
 
+Switch.defaultProps = {
+    onChange: () => {},
+    theme: {}
+};
+
 Switch.propTypes = {
-    onChange: PropTypes.function.isRequired
+    onChange: PropTypes.function,
+    theme: PropTypes.objectOf(PropTypes.any)
 };
 
 export default Switch;
