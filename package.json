@@ -31,8 +31,12 @@
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
+    "@types/micro": "^7.3.3",
+    "@types/micro-cors": "^0.1.0",
+    "@types/node": "^16.10.3",
+    "@types/react": "^17.0.27",
     "babel-plugin-styled-components": "^1.8.0",
-    "eslint": "^8.2.0",
+    "eslint": "^7.32.0",
     "eslint-config-airbnb": "^19.0.0",
     "eslint-config-next": "^12.0.4",
     "eslint-config-prettier": "^8.3.0",
@@ -46,10 +50,6 @@
     "lint-staged": "^12.0.2",
     "prettier": "^2.2.1",
     "sass": "^1.39.0",
-    "@types/micro": "^7.3.3",
-    "@types/micro-cors": "^0.1.0",
-    "@types/node": "^16.10.3",
-    "@types/react": "^17.0.27",
     "typescript": "^4.4.2"
   },
   "license": "MIT"
