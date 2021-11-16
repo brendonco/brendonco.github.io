@@ -38,7 +38,7 @@
     height: 50px;
     background-color: #83d8ff;
     border-radius: 90px - 6;
-    transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: background-color 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
     &:before {
         content: '';
@@ -69,14 +69,14 @@
     background-color: #f7ac52;
     border-radius: 50px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 1ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transform: rotate(-45deg);
 
     .crater {
         position: absolute;
         background-color: #e8cda5;
         opacity: 0;
-        transition: opacity 200ms ease-in-out;
+        transition: opacity 10ms ease-in-out;
         border-radius: 100%;
     }
 
@@ -105,7 +105,7 @@
 .star {
     position: absolute;
     background-color: #ffffff;
-    transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all 20ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
     border-radius: 50%;
 }
 
@@ -137,7 +137,7 @@
 .star--5,
 .star--6 {
     opacity: 0;
-    transition: all 300ms 0 cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all 20ms 0 cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 .star--4 {
@@ -212,13 +212,13 @@ input:checked {
             transform: translate3d(0, 0, 0);
         }
         .star--4 {
-            transition: all 300ms 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            transition: all 20ms 10ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
         }
         .star--5 {
-            transition: all 300ms 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            transition: all 20ms 10ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
         }
         .star--6 {
-            transition: all 300ms 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            transition: all 20ms 10ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
         }
     }
 }

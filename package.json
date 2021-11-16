@@ -21,7 +21,7 @@
     ]
   },
   "dependencies": {
-    "next": "^11.0.1",
+    "next": "^12.0.4",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -32,9 +32,9 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.8.0",
-    "eslint": "^7.22.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-next": "^11.0.1",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.0",
+    "eslint-config-next": "^12.0.4",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
@@ -43,9 +43,14 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^7.0.0",
-    "lint-staged": "^11.0.1",
+    "lint-staged": "^12.0.2",
     "prettier": "^2.2.1",
-    "sass": "^1.39.0"
+    "sass": "^1.39.0",
+    "@types/micro": "^7.3.3",
+    "@types/micro-cors": "^0.1.0",
+    "@types/node": "^16.10.3",
+    "@types/react": "^17.0.27",
+    "typescript": "^4.4.2"
   },
   "license": "MIT"
 }

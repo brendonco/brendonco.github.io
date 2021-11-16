@@ -27,7 +27,7 @@ Switch.defaultProps = {
 };
 
 Switch.propTypes = {
-    onChange: PropTypes.function,
+    onChange: PropTypes.func,
     theme: PropTypes.objectOf(PropTypes.any)
 };
 

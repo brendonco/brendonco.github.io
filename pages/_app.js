@@ -1,7 +1,7 @@
 import '../assets/styles.scss';
 
 import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 import { darkTheme, lightTheme } from '../common/Theme';
@@ -16,16 +16,14 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: background-color 300ms linear;
+    transition: background-color 10ms linear;
 
     a {
         :link {
-            color: ${({ defaultTheme, theme }) =>
-                defaultTheme === 'light' ? 'green' : theme.text};
+            color: ${({ theme }) => theme.link};
         }
         :visited {
-            color: ${({ defaultTheme, theme }) =>
-                defaultTheme === 'light' ? 'green' : theme.text};
+            color: ${({ theme }) => theme.link};
         }
     }
   }
@@ -34,6 +32,12 @@ const GlobalStyle = createGlobalStyle`
 export default function App({ Component, pageProps }) {
     const [isToggled, setIsToggled] = useState(false);
     const [theme, setTheme] = useState('light');
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
     const themeToggler = () => {
         theme === 'light' ? setTheme('dark') : setTheme('light');
     };
@@ -41,16 +45,21 @@ export default function App({ Component, pageProps }) {
     return (
         <>
             <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-                <GlobalStyle defaultTheme={theme} />
-                <Switch
-                    toggled={isToggled}
-                    theme={theme}
-                    onChange={(e) => {
-                        setIsToggled(e.target.checked);
-                        themeToggler();
-                    }}
-                />
-                <Component {...pageProps} />
+                <GlobalStyle />
+
+                {isMounted && (
+                    <>
+                        <Switch
+                            toggled={isToggled}
+                            theme={theme}
+                            onChange={(e) => {
+                                setIsToggled(e.target.checked);
+                                themeToggler();
+                            }}
+                        />
+                        <Component {...pageProps} />
+                    </>
+                )}
             </ThemeProvider>
         </>
     );
