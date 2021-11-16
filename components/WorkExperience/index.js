@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import Image from 'next/image';
 
 import { transformWorkTitle } from '../../common/helper';
 import { Stepper } from './work-experience-styled';
@@ -11,7 +12,7 @@ const WorkExperience = ({ profile: { workExperience } }) => (
                 <li key={work.id}>
                     <time dateTime={work.date} />
                     <div>
-                        <img
+                        <Image
                             alt="logo"
                             src={work.companyLogo}
                             blurDataURL={work.companyLogo}

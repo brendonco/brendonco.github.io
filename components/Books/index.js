@@ -13,6 +13,7 @@ const Books = ({ profile }) => (
                     <Link href={book.url} passHref>
                         <a target="_blank">
                             <Image
+                                alt={book.id}
                                 src={book.img}
                                 blurDataURL={book.img}
                                 width="74"
