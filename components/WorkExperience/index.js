@@ -16,8 +16,8 @@ const WorkExperience = ({ profile: { workExperience } }) => (
                             alt="logo"
                             src={work.companyLogo}
                             blurDataURL={work.companyLogo}
-                            width="56px"
-                            height="56px"
+                            width={56}
+                            height={56}
                             placeholder="blur"
                         />
                         <strong>{transformWorkTitle(work)}</strong>

@@ -1,4 +1,4 @@
-const currentPosition = 'Senior Software Engineer (Lead)';
+const currentPosition = 'Development Manager';
 
 const profile = {
     firstname: 'Brendon',

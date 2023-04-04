@@ -10,17 +10,15 @@ const Books = ({ profile }) => (
         <BooksWrapper>
             {profile.books.map((book) => (
                 <BooksItem key={book.id}>
-                    <Link href={book.url} passHref>
-                        <a target="_blank">
-                            <Image
-                                alt={book.id}
-                                src={book.img}
-                                blurDataURL={book.img}
-                                width="74"
-                                height="115.5"
-                                placeholder="blur"
-                            />
-                        </a>
+                    <Link href={book.url} target="_blank">
+                        <Image
+                            alt={book.id}
+                            src={book.img}
+                            blurDataURL={book.img}
+                            width={74}
+                            height={115.5}
+                            placeholder="blur"
+                        />
                     </Link>
                 </BooksItem>
             ))}

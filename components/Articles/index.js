@@ -9,8 +9,8 @@ const Contact = ({ profile }) => (
         <Wrapper>
             {profile.articles.map((article) => (
                 <Item key={article.id}>
-                    <Link href={article.value} passHref>
-                        <a target="_blank">{article.title}</a>
+                    <Link href={article.value} target="_blank">
+                        {article.title}
                     </Link>
                 </Item>
             ))}

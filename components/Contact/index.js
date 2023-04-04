@@ -13,8 +13,8 @@ const Contact = ({ profile }) => (
                     <Image src={contact.icon} width="16" height="16" alt="email" />
                     <Link
                         href={contact.id === 'email' ? `mailto:${contact.value}` : contact.value}
-                        passHref>
-                        <a target="_blank">{contact.value}</a>
+                        target="_blank">
+                        {contact.value}
                     </Link>
                 </ContactItem>
             ))}
