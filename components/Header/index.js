@@ -15,9 +15,9 @@ const Header = ({ profile }) => (
                 <div>{profile.title}</div>
             </Column>
             <Column direction="rtl">
-                <Link href="https://twitter.com/brendonco2000" legacyBehavior>
-                    <a target="_blank">
-                        <ImgCrop>
+                <ImgCrop>
+                    <Link href="https://twitter.com/brendonco2000" legacyBehavior>
+                        <a target="_blank">
                             <Image
                                 src={author}
                                 width="100"
@@ -25,9 +25,9 @@ const Header = ({ profile }) => (
                                 placeholder="blur"
                                 alt="Picture of the author"
                             />
-                        </ImgCrop>
-                    </a>
-                </Link>
+                        </a>
+                    </Link>
+                </ImgCrop>
             </Column>
         </Row>
     </HeaderWrapper>
