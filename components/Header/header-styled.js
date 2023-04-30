@@ -31,7 +31,5 @@ export const ImgCrop = styled.div`
     img {
         display: inline;
         margin: 0 auto;
-        height: 100%;
-        width: auto;
     }
 `;
