@@ -11,7 +11,7 @@ const geoUrl =
     'https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json';
 
 const isLabelVisible = ({ properties: { name } }) => {
-    const visible = ['Singapore', 'Taipei', 'Augsburg', 'Cebu City', 'Shenzhen'].some(
+    const visible = ['Singapore', 'Taipei', 'Augsburg', 'Cebu City', 'Shenzhen', 'London'].some(
         (v) => v === name
     );
 

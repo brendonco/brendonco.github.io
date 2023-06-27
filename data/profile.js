@@ -120,13 +120,13 @@ const profile = {
         }
     ],
     skills: [
-        { id: 'reactjs', label: 'ReactJS, redux, react-router', rate: 80, color: '#03DAC6' },
-        { id: 'nextjs', label: 'Next.js', rate: 80, color: '#ef6c00' },
-        { id: 'rxjs', label: 'RxJS', rate: 70, color: '#00695c' },
-        { id: 'js', label: 'JavaScript, HTML5, CSS3', rate: 80, color: '#699' },
-        { id: 'style', label: 'SASS, Styled-Components', rate: 80, color: '#939196' },
-        { id: 'grid', label: 'AG-GRID', rate: 75, color: '#6200EE' },
-        { id: 'testing', label: 'Jest, testing-library, Jasmine', rate: 75, color: '#fc642d' },
+        { id: 'reactjs', label: 'ReactJS, redux, react-router', rate: 85, color: '#03DAC6' },
+        { id: 'nextjs', label: 'Next.js', rate: 83, color: '#ef6c00' },
+        { id: 'rxjs', label: 'RxJS', rate: 75, color: '#00695c' },
+        { id: 'js', label: 'JavaScript, HTML5, CSS3', rate: 85, color: '#699' },
+        { id: 'style', label: 'SASS, Styled-Components', rate: 85, color: '#939196' },
+        { id: 'grid', label: 'AG-GRID', rate: 80, color: '#6200EE' },
+        { id: 'testing', label: 'Jest, testing-library, Jasmine', rate: 80, color: '#fc642d' },
         { id: 'mobile', label: 'PhoneGap, react-native', rate: 70, color: '#ff5a5f' }
     ],
     books: [
@@ -185,6 +185,11 @@ const profile = {
                 markerOffset: 15,
                 name: 'Singapore',
                 coordinates: [103.74551407051558, 1.9287016314791159]
+            },
+            {
+                markerOffset: 15,
+                name: 'UK',
+                coordinates: [51.4999947297, -0.11672184386]
             }
         ]
     }

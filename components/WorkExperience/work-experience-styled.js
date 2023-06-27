@@ -43,7 +43,6 @@ export const Stepper = styled.ul`
             z-index: 1;
             left: 0;
             height: 100%;
-            border-left: 1px #ccc solid;
         }
 
         strong,
