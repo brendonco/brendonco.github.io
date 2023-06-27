@@ -2,7 +2,16 @@ import Link from 'next/link';
 import Card from '../Card';
 import { Wrapper } from './talk-styled';
 
-const Talk = ({ profile: any }) => {
+type ProfileProps = {
+    profile: {
+        talk: {
+            title: string;
+            data: array;
+        };
+    };
+};
+
+const Talk = ({ profile }: ProfileProps) => {
     const {
         talk: { title, data }
     } = profile;
