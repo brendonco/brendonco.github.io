@@ -6,7 +6,7 @@ type ProfileProps = {
     profile: {
         talk: {
             title: string;
-            data: array;
+            data: Array;
         };
     };
 };
