@@ -23,12 +23,12 @@ const Switch = ({ onChange, theme }) => {
 
 Switch.defaultProps = {
     onChange: () => {},
-    theme: {}
+    theme: ''
 };
 
 Switch.propTypes = {
-    onChange: PropTypes.func,
-    theme: PropTypes.objectOf(PropTypes.any)
+    onChange: PropTypes.func.isRequired,
+    theme: PropTypes.string
 };
 
 export default Switch;

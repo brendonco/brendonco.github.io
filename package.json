@@ -28,12 +28,12 @@
     "react-globe.gl": "^2.17.1",
     "react-is": "^18.2.0",
     "react-simple-maps": "^3.0.0",
-    "styled-components": "^5.0.0"
+    "styled-components": "^6.0.0-rc.6"
   },
   "devDependencies": {
     "@types/micro": "^10.0.0",
     "@types/micro-cors": "^0.1.0",
-    "@types/node": "^18.15.11",
+    "@types/node": "^20.3.2",
     "@types/react": "^18.0.33",
     "babel-plugin-styled-components": "^2.0.7",
     "eslint": "^8.37.0",

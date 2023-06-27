@@ -143,6 +143,21 @@ const profile = {
             img: 'https://images-na.ssl-images-amazon.com/images/I/51Wou0YKNfL._SX331_BO1,204,203,200_.jpg'
         }
     ],
+    talk: {
+        title: 'Talks',
+        data: [
+            {
+                id: 'react-berlin-2022',
+                title: 'Introduction To Library Marketplace (React Berlin 2022)',
+                url: 'https://portal.gitnation.org/contents/introduction-to-library-market-place'
+            },
+            {
+                id: 'react-summit-2023',
+                title: 'Introduction To Library Marketplace (React Summit Amsterdam 2023)',
+                url: 'https://portal.gitnation.org/contents/introduction-to-library-marketplace'
+            }
+        ]
+    },
     travels: {
         title: 'BUSINESS TRIP AND INTERNATIONAL EXPERIENCE',
         markers: [

@@ -8,6 +8,7 @@ const DynamicHeaderComponent = dynamic(() => import('../Header'));
 const DynamicSkillsComponent = dynamic(() => import('../Skills'));
 const DynamicTravelComponent = dynamic(() => import('../Travel'));
 const DynamicWorkExperienceComponent = dynamic(() => import('../WorkExperience'));
+const DynamicTalkComponent = dynamic(() => import('../Talk'));
 
 import { ResumeWrapper } from './resume-styled';
 
@@ -19,6 +20,7 @@ const Resume = ({ profile }) => (
         <DynamicSkillsComponent profile={profile} />
         <DynamicBooksComponent profile={profile} />
         <DynamicArticlesComponent profile={profile} />
+        <DynamicTalkComponent profile={profile} />
         <DynamicTravelComponent profile={profile} />
     </ResumeWrapper>
 );

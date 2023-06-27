@@ -12,7 +12,7 @@ const Skills = ({ profile, theme }) => (
         <SkillsWrapper>
             {profile.skills.map((skill) => (
                 <div key={`${skill.id}`}>
-                    <div>&bull; {skill.label}</div>{' '}
+                    <div>{skill.label}</div>{' '}
                     <DynamicProgressBarComponent
                         completed={skill.rate}
                         bgcolor={skill.color}
