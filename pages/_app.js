@@ -1,5 +1,5 @@
 import '../assets/styles.scss';
-import { Providers } from './providers';
+import Providers from './providers';
 
 export default function App({ Component, pageProps }) {
     return (

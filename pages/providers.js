@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export function Providers({ children }) {
+export default function Providers({ children }) {
     const [isToggled, setIsToggled] = useState(false);
     const [theme, setTheme] = useState('light');
     const [isMounted, setIsMounted] = useState(false);
