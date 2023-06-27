@@ -2,11 +2,17 @@ import Link from 'next/link';
 import Card from '../Card';
 import { Wrapper } from './talk-styled';
 
+type DataProps = {
+    id: string;
+    url: string;
+    title: string;
+};
+
 type ProfileProps = {
     profile: {
         talk: {
             title: string;
-            data: Array;
+            data: DataProps[];
         };
     };
 };
