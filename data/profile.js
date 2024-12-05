@@ -131,6 +131,12 @@ const profile = {
     ],
     books: [
         {
+            id: 'dmfacur',
+            title: 'Develop My First AI Copilot using React',
+            url: 'https://leanpub.com/developmyfirstaicopilotusingreact',
+            img: 'https://d2sofvawe08yqg.cloudfront.net/developmyfirstaicopilotusingreact/s_hero2x?1733295625'
+        },
+        {
             id: 'jtmfe',
             title: 'Journey to Micro Frontends',
             url: 'https://leanpub.com/journeytomfe',

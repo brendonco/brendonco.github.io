@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const BooksWrapper = styled.div`
-    display: grid;
-    grid-template-columns: 15% 15%;
+    display: flex;
     max-width: inherit;
 `;
 
