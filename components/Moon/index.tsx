@@ -1,6 +1,10 @@
 import styles from './Moon.module.css';
 
-export default function Moon({ theme }) {
+interface MoonProps {
+    theme: string; // Define the type of the theme prop
+}
+
+export default function Moon({ theme }: MoonProps) {
     return (
         <div
             className={`${styles.moon} ${
