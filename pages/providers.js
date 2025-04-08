@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import { darkTheme, lightTheme } from '../common/Theme';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Switch from '../components/Switch';
+import Moon from '../components/Moon';
+import Sun from '../components/Sun';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -39,7 +41,11 @@ export default function Providers({ children }) {
     }, []);
 
     const themeToggler = () => {
-        theme === 'light' ? setTheme('dark') : setTheme('light');
+        if (theme === 'light') {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
     };
 
     return (
@@ -57,6 +63,8 @@ export default function Providers({ children }) {
                                 themeToggler();
                             }}
                         />
+                        <Moon theme={theme} />
+                        <Sun theme={theme} />
                         {children}
                     </>
                 )}

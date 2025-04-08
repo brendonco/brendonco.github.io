@@ -14,7 +14,7 @@ const profile = {
             position: currentPosition,
             country: 'SINGAPORE',
             description: `Hands on Web application development. Implement proof of concept on different technology into
-            existing product.Setup development code base via Webpack, React, ES6, LODASH, CSS in JS, Zuul and
+            existing product.Setup development code base via Webpack, Rspack, React, ES6, LODASH, CSS in JS, Copilot, Tailwind, OpenShift, Azure, and
             library dependency. Design and architect Micro Frontend using Module Federation. Running internal guild. Improve and Optimize application loading time by 5 times faster.
             Build UI library from scratch. Apply Test Driven Development using test framework such as Jasmine, testing library and Jest. Critique application
             wireframes and designs. Accessing, determine the work effort and estimate the necessary time to

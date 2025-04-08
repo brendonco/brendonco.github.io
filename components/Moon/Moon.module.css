@@ -1,0 +1,70 @@
+.moon {
+    position: absolute;
+    bottom: -100px; /* Start below the viewport */
+    left: 50%; /* Start near the center */
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background-color: #f5f3ce; /* Moon color */
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    animation: riseToTopRight 5s ease-in-out forwards, glow 2s infinite alternate; /* Add glow animation */
+    z-index: 10;
+}
+
+.moonrise {
+    animation: riseToTopRight 5s ease-in-out forwards, glow 2s infinite alternate;
+}
+
+.moonset {
+    animation: setToBottomRight 5s ease-in-out forwards, glow 2s infinite alternate;
+}
+
+@keyframes setToBottomRight {
+    0% {
+        bottom: 90%; /* Start near the top */
+        left: 90%; /* Start at the top-right corner */
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        bottom: -100px; /* End below the viewport */
+        left: 50%; /* Move back to the center */
+        opacity: 0;
+    }
+}
+
+
+@keyframes riseToTopRight {
+    0% {
+        bottom: -100px; /* Start below the viewport */
+        left: 50%; /* Start near the center */
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        bottom: 90%; /* End near the top */
+        left: 90%; /* End near the top-right corner */
+        opacity: 1;
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(255, 255, 255, 1);
+    }
+}
+
+/* Hide the moon when printing */
+@media print {
+    .moon {
+        display: none;
+    }
+}
