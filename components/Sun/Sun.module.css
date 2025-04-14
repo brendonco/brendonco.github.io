@@ -20,34 +20,74 @@
     animation: setToBottomRight 5s ease-in-out forwards, glow 2s infinite alternate;
 }
 
+/* Mobile-specific styles for 400px width */
+@media (max-width: 400px) {
+    .sun {
+        width: 80px; /* Smaller size for mobile */
+        height: 80px;
+    }
+
+    @keyframes riseToTopRight {
+        0% {
+            bottom: -10vh; /* Start below the viewport */
+            left: 50vw; /* Start near the center */
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            bottom: 86vh; /* Move to the top */
+            left: 90vw; /* Move to the top-right corner */
+            opacity: 1;
+        }
+    }
+
+    @keyframes setToBottomRight {
+        0% {
+            bottom: 86vh; /* Start at the top */
+            left: 90vw; /* Start at the top-right corner */
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.8;
+        }
+        100% {
+            bottom: -10vh; /* End below the viewport */
+            left: 50vw; /* Move back to the center */
+            opacity: 0;
+        }
+    }
+}
+
 @keyframes riseToTopRight {
     0% {
-        bottom: -100px; /* Start below the viewport */
-        left: 50%; /* Start near the center */
+        bottom: -10vh; /* Start below the viewport */
+        left: 50vw; /* Start near the center */
         opacity: 0;
     }
     50% {
         opacity: 1;
     }
     100% {
-        bottom: 90%; /* End near the top */
-        left: 90%; /* Move to the top-right corner */
+        bottom: 86vh; /* End near the top */
+        left: 90vw; /* Move to the top-right corner */
         opacity: 1;
     }
 }
 
 @keyframes setToBottomRight {
     0% {
-        bottom: 90%; /* Start near the top */
-        left: 90%; /* Start at the top-right corner */
+        bottom: 86vh; /* Start near the top */
+        left: 90vw; /* Start at the top-right corner */
         opacity: 1;
     }
     50% {
         opacity: 0.8;
     }
     100% {
-        bottom: -100px; /* End below the viewport */
-        left: 50%; /* Move back to the center */
+        bottom: -10vh; /* End below the viewport */
+        left: 50vw; /* Move back to the center */
         opacity: 0;
     }
 }

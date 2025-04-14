@@ -47,8 +47,8 @@
         opacity: 1;
     }
     100% {
-        bottom: 90%; /* End near the top */
-        left: 90%; /* End near the top-right corner */
+        bottom: 86vh; /* End near the top */
+        left: 90vw; /* End near the top-right corner */
         opacity: 1;
     }
 }
