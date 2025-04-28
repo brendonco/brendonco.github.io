@@ -149,6 +149,20 @@ const profile = {
             img: 'https://images-na.ssl-images-amazon.com/images/I/51Wou0YKNfL._SX331_BO1,204,203,200_.jpg'
         }
     ],
+    certificates: [
+        {
+            id: 'google-cloud',
+            name: 'Google Cloud Digital Leader',
+            img: '/logos/google-cloud-ai.png',
+            url: 'http://cdn.qwiklabs.com/VF6eQ1bV8SfqKBpu8AVD%2F4G93sg9wJQ0wWe9CTc%2FJ%2F4%3D'
+        },
+        {
+            id: 'databricks',
+            name: 'Generative AI Fundamentals',
+            img: '/logos/databricks-gen-ai.png',
+            url: 'https://credentials.databricks.com/85cc8dfe-e95d-4bfe-b31e-a5a1686f1fd1#acc.HlBGL2E5'
+        }
+    ],
     talk: {
         title: 'Talks',
         data: [

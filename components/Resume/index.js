@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 const DynamicArticlesComponent = dynamic(() => import('../Articles'));
 const DynamicBooksComponent = dynamic(() => import('../Books'));
+const DynamicCertificatesComponent = dynamic(() => import('../Certificates'));
 const DynamicContactComponent = dynamic(() => import('../Contact'));
 const DynamicHeaderComponent = dynamic(() => import('../Header'));
 const DynamicSkillsComponent = dynamic(() => import('../Skills'));
@@ -19,6 +20,7 @@ const Resume = ({ profile }) => (
         <DynamicWorkExperienceComponent profile={profile} />
         <DynamicSkillsComponent profile={profile} />
         <DynamicBooksComponent profile={profile} />
+        <DynamicCertificatesComponent profile={profile} />
         <DynamicArticlesComponent profile={profile} />
         <DynamicTalkComponent profile={profile} />
         <DynamicTravelComponent profile={profile} />
