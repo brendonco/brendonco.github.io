@@ -13,12 +13,25 @@ const profile = {
             companyLogo: '/logos/scb.jpeg',
             position: currentPosition,
             country: 'SINGAPORE',
-            description: `Hands on Web application development. Implement proof of concept on different technology into
-            existing product.Setup development code base via Webpack, Rspack, React, ES6, LODASH, CSS in JS, Copilot, Tailwind, OpenShift, Azure, and
-            library dependency. Design and architect Micro Frontend using Module Federation. Running internal guild. Improve and Optimize application loading time by 5 times faster.
-            Build UI library from scratch. Apply Test Driven Development using test framework such as Jasmine, testing library and Jest. Critique application
-            wireframes and designs. Accessing, determine the work effort and estimate the necessary time to
-            completion.`
+            description: `Hands on Web application development. Implement proof of concept on different technology into existing product. Setup development code base via Webpack, React, Typescript, ES6, LODASH, CSS in JS, PostgreSQL, JAVA Springboot, OpenShift, Azure, Zuul and library dependency. Leveraging Github Copilot and ChatGPT for code development and quality.
+
+            Implement Model Context Server (MCP) server PostgreSQL integration for Agentic AI such as Github Copilot.
+
+            Design and architect Micro Frontend. Build UI library from scratch. Apply Test Driven Development using test framework such as Jasmine, testing library and Jest. Critique application wireframes and designs. Accessing, determine the work effort and estimate the necessary time to completion.
+
+            Lead fullstack and collaboration with QA engineers.
+
+            Lead the quarterly/half-yearly planning and build a smooth execution plan with the team for securing the delivery of product and engineering road.
+
+            Lead the design, development, and maintenance of critical systems including front-end and backend.
+
+            Ensure scalable, secure, and maintainable architecture across teams.
+
+            Guide and mentor engineers, fostering growth and knowledge sharing.
+
+            Promote best practices in code quality, observability, and security. Manage cross-team dependencies and drive collaboration across functions.
+
+            Influence strategic technical decisions, aligning with business objectives. Drive process improvements for greater efficiency and impact.`
         },
         {
             id: 'cxa',
