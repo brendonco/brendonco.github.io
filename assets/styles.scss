@@ -232,6 +232,7 @@ input:checked {
 .content {
     @media print {
         margin-top: 0;
+        page-break-inside: avoid;
     }
 
     @media screen {
@@ -247,5 +248,22 @@ input:checked {
         color: black !important; /* Force black font color */
         background: none !important; /* Remove any background colors */
         box-shadow: none !important; /* Remove shadows for cleaner printing */
+    }
+
+    /* Add page break controls */
+    .content {
+        height: auto !important;
+        min-height: 0 !important;
+    }
+    
+    /* Prevent page breaks inside important sections */
+    section {
+        page-break-inside: avoid;
+    }
+    
+    /* Allow page breaks between major sections */
+    .card-wrapper {
+        page-break-inside: avoid;
+        break-inside: avoid;
     }
 }

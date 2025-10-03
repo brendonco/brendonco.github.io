@@ -11,5 +11,4 @@ export const LeftCard = styled.div`
 
 export const RightCard = styled.div`
     flex: 1;
-    padding-left: 5px;
 `;

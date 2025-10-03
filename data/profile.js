@@ -180,14 +180,24 @@ const profile = {
         title: 'Talks',
         data: [
             {
-                id: 'react-berlin-2022',
-                title: 'Introduction To Library Marketplace (React Berlin 2022)',
-                url: 'https://portal.gitnation.org/contents/introduction-to-library-market-place'
-            },
-            {
                 id: 'react-summit-2023',
                 title: 'Introduction To Library Marketplace (React Summit Amsterdam 2023)',
                 url: 'https://portal.gitnation.org/contents/introduction-to-library-marketplace'
+            },
+            {
+                id: 'react-berlin-2022',
+                title: 'Introduction To Library Marketplace (React Berlin 2022)',
+                url: 'https://portal.gitnation.org/contents/introduction-to-library-market-place'
+            }            
+        ]
+    },
+    workshop: {
+        title: 'Workshops',
+        data: [
+            {
+                id: 'tech-lead-2025',
+                title: 'On-Premise Open-Source LLMs with Ollama & FastAPI (Tech Lead Conf - 20 November 2025)',
+                url: 'https://techleadconf.com/#workshop-on-premise-open-source-ll-ms-with-ollama-fast-api'
             }
         ]
     },
